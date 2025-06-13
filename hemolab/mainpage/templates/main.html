@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,6 +10,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/main.css'%}">
     <script src='main.js'></script>
 </head>
+
 <body>
     <header>
         <img src="{% static 'img/logo.png' %}" alt="Logo do site">
@@ -21,14 +23,54 @@
                 <li><a href="#">Quem Somos</a></li>
             </ul>
         </nav>
-        <p>Contato: (84) 3616-5000</p>
+
+        <div class="contato-conteiner">
+            <p> (84) 3616-5000</p>
+            <p> (84) 3616-5000</p>
+        </div>
+
         <p class="Resultados">Resultados</p>
         <p class="Compre-online">Compre Online</p>
     </header>
     <main>
         <section>
+            <div class="carrossel">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="{% static 'img/carrosel-1.png' %}" alt="Baixe nosso app">
+                        <div class="slide__overlay">
+                            <h2 class="slide__title">Baixe o novo app Hemolab</h2>
+                            <p class="slide__desc">
+                                Acesso os resultados dos exames, encontre a unidade mais próxima e muito mais.
+                            </p>
+                            <a href="https://play.google.com/store/apps/details?id=br.com.nd.hemolab.app"
+                                target="_blank" class="btn" rel="noopener noreferrer">
+                                Acessar agora
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="{% static 'img/carrosel-2.png' %}" alt="Coleta domiciliar">
+                        <div class="slide__overlay">
+                            <h2 class="slide__title">Coleta Domiciliar</h2>
+                            <p class="slide__desc">
+                                Acesse os resultados dos exames, encontre a unidade mais próxima e muito mais.
+                            </p>
+                            <a href="https://play.google.com/store/apps/details?id=br.com.nd.hemolab.app"
+                                target="_blank" class="btn" rel="noopener noreferrer">
+                                Acessar agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
             <h2>Unidades Hemolab</h2>
-            <p>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento, espalhadas por toda Natal e Grande Natal.</p>
+            <p>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento,
+                espalhadas por toda Natal e Grande Natal.</p>
             <p>OBS: Coletas são realizadas até 1 hora antes do fechamento (Exceto Petrópolis).</p>
         </section>
 
@@ -94,4 +136,5 @@
         <a href="#">Políticas de Privacidade</a>
     </footer>
 </body>
+
 </html>
