@@ -106,14 +106,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="linha-flex">
-                    <div class="linha-flex-clouna-1">
-                        <img src="{% static 'img/blood.png' %}" alt="Coleta domiciliar">
-                        <div class="descrição">Coletas externas</div>
+                <div class="desc-colum">
+                    <div class="linha-flex">
+                        <div class="linha-flex-clouna-1">
+                            <img src="{% static 'img/blood.png' %}" alt="Coleta domiciliar">
+                            <div class="descrição">Coletas externas</div>
+                        </div>
+                        <div class="linha-flex-coluna-2">
+                            <img src="{% static 'img/hard.png' %}" alt="Coleta domiciliar">
+                            <div class="descrição">Drive-thru</div>
+                        </div>
                     </div>
-                    <div class="linha-flex-coluna-2">
-                        <img src="{% static 'img/hard.png' %}" alt="Coleta domiciliar">
-                        <div class="descrição">Drive-thru</div>
+                    <div class="desc">
+                        <p>Equipamentos de alta tecnologia, atendimento de excelência e confiança nos resultados!</p>
+                        <a href="#">Entre em contato ➜</a>
                     </div>
                 </div>
             </div>
@@ -121,49 +127,143 @@
 
         </section>
 
-        <section>
-            <h2>Unidades Hemolab</h2>
-            <p>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento,
-                espalhadas por toda Natal e Grande Natal.</p>
-            <p>OBS: Coletas são realizadas até 1 hora antes do fechamento (Exceto Petrópolis).</p>
+        <section class="desc-unidades">
+            <div class="container-desc-unidades-1">
+                <h2>Unidades Hemolab</h2>
+                <p>Tem sempre um Hemolab perto de você! </p>
+                <p>OBS: Coletas são realizadas até 1 hora antes do fechamento <br> (Exceto Petrópolis).</p>
+            </div>
+            <div class="container-desc-unidades-2">
+                <button aria-label="Botão anterior">&lt;</button>
+                <button aria-label="Botão próximo">&gt;</button>
+            </div>
         </section>
 
-        <section>
-            <h3>Unidades</h3>
-            <ul>
-                <li>
-                    <h4>Hemolab - Petrópolis</h4>
-                    <p>Endereço: Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</p>
-                    <p>Telefone: (84) 3616-5000</p>
-                    <p>Horário: Segunda à Sexta das 6:00h às 17:00h, Sábado das 6:30h às 13:00h</p>
-                </li>
-                <li>
-                    <h4>Hemolab - Nascimento de Castro</h4>
-                    <p>Endereço: Av. Nascimento de Castro, 1909 - Lagoa Nova</p>
-                    <p>Telefone: (84) 3616-5000</p>
-                    <p>Horário: Segunda à Sexta das 6:00h às 16:00h, Sábado das 6:30h às 12:00h</p>
-                </li>
-                <li>
-                    <h4>Hemolab - Miguel Castro</h4>
-                    <p>Endereço: Av. Miguel Castro, 1137, Lagoa Nova</p>
-                    <p>Telefone: (84) 3616-5000</p>
-                    <p>Horário: Segunda à Sexta das 6:00h às 12:00h, Sábado das 6:30h às 10:30h</p>
-                </li>
-                <li>
-                    <h4>Hemolab - Capim Macio</h4>
-                    <p>Endereço: Av. Engenheiro Roberto Freire, 915 - Capim Macio, Natal - RN</p>
-                    <p>Telefone: (84) 3616-5000</p>
-                    <p>Horário: Segunda à Sexta das 6:00h às 16:00h, Sábado das 6:30h às 12:00h</p>
-                </li>
-                <li>
-                    <h4>Hemolab - Cidade da Esperança</h4>
-                    <p>Endereço: Av. Paraíba, 120 - Cidade da Esperança, Natal - RN</p>
-                    <p>Telefone: (84) 3616-5000</p>
-                    <p>Horário: Segunda à Sexta das 6:00h às 12:00h, Sábado das 6:30h às 10:30h</p>
-                </li>
-                <!-- Adicione mais unidades conforme necessário -->
-            </ul>
+        <section class="unidades-geral">
+            <div class="carrossel-unidades">
+                <ul>
+                    <li>
+                        <img src="{% static 'img/petropolis.png' %}" alt="img hemolab petropolis">
+                        <h4>Hemolab - Petrópolis</h4>
+                        <p>Endereço: Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</p>
+                        <p>Telefone: (84) 3616-5000</p>
+                        <p>Horário: Segunda à Sexta das 6:00h às 17:00h, Sábado das 6:30h às 13:00h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/nascimento de castro.png' %}" alt="img hemolab nasciemnto de castro">
+                        <h4>Hemolab - Nascimento de Castro</h4>
+                        <p>Endereço: Av. Nascimento de Castro, 1909 - Lagoa Nova</p>
+                        <p>Telefone: (84) 3616-5000</p>
+                        <p>Horário: Segunda à Sexta das 6:00h às 16:00h, Sábado das 6:30h às 12:00h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/miguel castro.png' %}" alt="img hemolab miguel castro">
+                        <h4>Hemolab - Miguel Castro</h4>
+                        <p>Endereço: Av. Miguel Castro, 1137, Lagoa Nova</p>
+                        <p>Telefone: (84) 3616-5000</p>
+                        <p>Horário: Segunda à Sexta das 6:00h às 12:00h, Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/roberto freire e vacinas.png' %}" alt="#">
+                        <h4>Hemolab - Capim Macio</h4>
+                        <p>Endereço: Av. Engenheiro Roberto Freire, 915 - Capim Macio, Natal - RN</p>
+                        <p>Telefone: (84) 3616-5000</p>
+                        <p>Horário: Segunda à Sexta das 6:00h às 16:00h, Sábado das 6:30h às 12:00h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/esperanca.png' %}" alt="#">
+                        <h4>Hemolab - Cidade da Esperança</h4>
+                        <p>Endereço: Av. Paraíba, 120 - Cidade da Esperança, Natal - RN</p>
+                        <p>Telefone: (84) 3616-5000</p>
+                        <p>Horário: Segunda à Sexta das 6:00h às 12:00h, Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/coophab.png' %}" alt="#">
+                        <h4>Hemolab - Coophab</h4>
+                        <p>Av. Olavo Lacerda Montenegro, 3345 - Parque das Nações, Parnamirim - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/itapetinga.png' %}" alt="#">
+                        <h4>Hemolab - Itapetinga</h4>
+                        <p>Avenida Itapetinga, 920 - Potengi</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/rua ilheus.png' %}" alt="#">
+                        <h4>Hemolab - Potengi</h4>
+                        <p>Rua Ilhéus, 2706 - Potengi</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/sao goncalo.png' %}" alt="#">
+                        <h4>Hemolab - São Gonçalo do Amarante</h4>
+                        <p>Centro Médico Carajás - Av. Bacharel Tomaz Landim, SN, São Gonçalo do Amarante - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/praia shopping.png' %}" alt="#">
+                        <h4>Hemolab - Praia Shopping</h4>
+                        <p>Av. Engenheiro Roberto Freire, 3132 - Capim Macio</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/maria lacerda.jpg' %}" alt="#">
+                        <h4>Hemolab - Maria Lacerda</h4>
+                        <p>Nordestão - Av. Maria Lacerda Montenegro, 1400 - Nova Parnamirim</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/boa esperaca.png' %}" alt="#">
+                        <h4>Hemolab - Parnamirim</h4>
+                        <p>Av. Prof. Clementino Câmara, 227 - Centro, Parnamirim - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/neoplis.png' %}" alt="#">
+                        <h4>Hemolab - Neópolis</h4>
+                        <p>R. Divinópolis, 2976 - Neópolis, Natal - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/satelite.jpg' %}" alt="#">
+                        <h4>Hemolab - Satélite</h4>
+                        <p>Av. dos Xavantes, 1765 - Cidade Satélite, Natal - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/parnamirim2.jpg' %}" alt="#">
+                        <h4>Hemolab - Parnamirim II</h4>
+                        <p>R. Edgar Dantas, 451 - Santos Reis, Parnamirim - RN</p>
+                        <p>(84) 3616-5000</p>
+                        <p>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="container-unidades-more">
+                <div class="carrosel-unidades-more">
+                    <div class="position-uniades">
+                        <button class="indicator active"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                    </div>
+                    <button class="todas-unidades">Todas as unidades ➜</button>
+                </div>
+            </div>
+
         </section>
+
+
         <section>
             <h2>Serviços</h2>
             <p>O Hemolab dispõe de serviços de diagnose nas mais diversas áreas como:</p>

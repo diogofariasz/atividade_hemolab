@@ -1,8 +1,8 @@
 body {
-    overflow-x: hidden; 
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 header {
@@ -46,46 +46,47 @@ header nav ul li a {
     transition: background-color 0.3s ease;
     color: #213360;
 }
+
 nav ul {
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-  display: flex; 
-  gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-  position: relative;
+    position: relative;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #000;
-  padding: 10px 0 10px 0;
-  display: block;
-  font-weight: 500;
-  cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0 10px 0;
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 /* Barrinha no topo dos itens*/
 nav ul li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #00989E;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-  border-radius: 2px 2px 0 0;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00989E;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    border-radius: 2px 2px 0 0;
+    pointer-events: none;
 }
 
 /* Barrinha aparece ao passar o mouse */
 nav ul li:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 header p {
@@ -98,7 +99,7 @@ header p {
     color: #1A274A;
     font-size: 16px;
     font-weight: bold;
-    margin: 0; 
+    margin: 0;
 
 }
 
@@ -132,8 +133,8 @@ header p {
 
 /* Carousel container exibe apenas uma imagem */
 .carrossel {
-    width: 100%; 
-    max-width: 100vw; 
+    width: 100%;
+    max-width: 100vw;
     height: 600px;
     overflow: hidden;
     padding: 5px;
@@ -148,8 +149,7 @@ header p {
 
 /* Cada slide é position relative para posicionar overlay */
 .slide {
-    position: relative;/
-    width: 100vw;
+    position: relative;/ width: 100vw;
     height: 600px;
     flex-shrink: 0;
     border-radius: 12px;
@@ -209,7 +209,7 @@ header p {
     background-color: #00a3e8;
 }
 
-.principios{
+.principios {
     width: 100%;
     max-width: 100vw;
     display: flex;
@@ -218,50 +218,57 @@ header p {
     justify-content: center;
     align-items: center;
     gap: 110px;
-    padding: 20px; 
+    padding: 20px;
 }
-.box-principios{
+
+.box-principios {
     width: 550px;
     height: 450px;
-    position: relative; 
-    padding-left: 20px; 
+    position: relative;
+    padding-left: 20px;
 }
-.box-principios > h1{
+
+.box-principios>h1 {
     color: #0E204D;
     font-family: Quicksand, sans-serif;
     font-size: 40px;
 }
-.box-principios > div{
+
+.box-principios>div {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     color: #213360;
     margin: 0px 0px 30px;
     font-weight: 700;
 }
+
 .texto-principios {
-    position: relative; 
+    position: relative;
     padding-left: 35px;
 }
+
 .texto-principios::before {
     content: "";
     position: absolute;
-    left: 0; 
+    left: 0;
     top: 0;
-    width: 2px; 
-    height: 100%; 
-    background-color: #213360; 
+    width: 2px;
+    height: 100%;
+    background-color: #213360;
     border-radius: 3px;
- 
+
 }
-.texto-principios-2{
+
+.texto-principios-2 {
     padding-left: 35px;
-     font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     color: #213360;
     margin: 0px 0px 30px;
 
 }
-.btn-princpios{
+
+.btn-princpios {
     padding-left: 35px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -277,89 +284,377 @@ header p {
     border-radius: 25px;
     text-decoration: none;
 }
-.video{
+
+.video {
     width: 450px;
     height: 253px;
 }
+
 /*section Nossos Serviços*/
-.bg-img{
+.bg-img {
     background-image: url('/static/img/servicos-home.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 350px;
 }
-.linha-coluna{
+
+.linha-coluna {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 300px;
     height: 100%;
-   
+
 }
-.titulo-servico{
+
+.titulo-servico {
     font-size: 37px;
     color: #0e204d;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     line-height: 1.3;
 }
-.servicos-desc{
+
+.servicos-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
     gap: 25px;
 }
-.servicos-desc > p{
+
+.servicos-desc>p {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #848e9f;
     width: 450px;
     gap: 180px;
 }
-.linha-flex{
-    border: 1px solid black;
+
+.linha-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 140px;
     gap: 100px;
-    background-color: #f0f6f6ed;
-}
-.linha-flex-clouna-1{
-    border: 1px solid blueviolet;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     width: 270px;
-    height: 170px;
-    border-radius:30px ;
-    background-color: #ffff;
-    color: #0E204D;
-     font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 230px;
+    margin: 0;
 }
 
-.linha-flex-coluna-2{
-    border: 1px solid greenyellow;
+.linha-flex-clouna-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 270px;
     height: 170px;
-    border-radius:30px ;
+    border-radius: 30px;
     background-color: #ffff;
     color: #0E204D;
-     font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 230px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.01);
+
 }
+
+.linha-flex-coluna-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 170px;
+    border-radius: 30px;
+    background-color: #ffff;
+    color: #0E204D;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.01);
+
+}
+
+.desc-colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc>p {
+    color: #848e9f;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.desc>a {
+    text-decoration: none;
+    color: #213360;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*Unidades*/
+.desc-unidades {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 220 px;
+    background-color: #00989E;
+
+}
+
+.container-desc-unidades-1 {
+    border: 1px solid brown;
+    width: 400px;
+}
+
+.container-desc-unidades-1>h2 {
+    font-family: Quicksand, sans-serif;
+    color: #ffff;
+    font-size: 37px;
+    font-weight: bold;
+    margin: 0 0 20px;
+
+}
+
+.container-desc-unidades-1 {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #ffff;
+    margin: 20px 0px 15px;
+
+}
+
+.unidades-geral {
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00989E;
+}
+
+.container-desc-unidades-2 {
+    border: 1px solid brown;
+    
+}
+
+.container-desc-unidades-2 button {
+    background-color: transparent;
+    border: none;
+    color: #bdbdbd;
+    padding: 14px 26px;
+    font-size: 60px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+
+
+.carrossel-unidades {
+    max-width: 910px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #00a3e8;
+    padding-right: 20px;
+    position: relative;
+}
+
+.carrossel-unidades ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: moveCarousel 20s infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Centralização visual de cada grupo de 3 */
+.carrossel-unidades li {
+    width: 290px;
+    height: 500px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: #ffff;
+    border-radius: 12px;
+}
+.carrossel-unidades li > h4{
+    font-family: Quicksand, sans-serif;
+    color: #1A274A;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0px 0px 30px;
+    margin: 20px;
+
+
+}
+.carrossel-unidades li > p{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #222222;
+    margin: 20px;
+    position: relative;
+    padding-left: 15px; /* espaço para a bolinha */
+
+}
+.carrossel-unidades li > p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: #1A274A; /* cor da bolinha – ajuste se quiser */
+    line-height: 1;
+}
+
+.carrossel-unidades img {
+    width: 290px;
+    height: 220px;
+    border-radius: 12px;
+}
+.container-unidades-more{
+    display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+}
+.carrosel-unidades-more{
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    width: 700px;
+    
+
+}
+.todas-unidades{
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    padding: 14px 26px;
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 12px;
+    cursor: pointer;
+    min-width: 72px;
+    height: 72px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    text-shadow: 1px 1px 2px rgba(59, 130, 246, 0.3);
+    font-family: 'roboto', sans-serif;
+}
+
+.position-unidades {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os indicadores */
+    margin-bottom: 10px; /* Espaçamento abaixo dos indicadores */
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.indicator:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.indicator.active {
+    background-color: rgba(0, 163, 232, 0.9); /* Cor do indicador ativo */
+    box-shadow: 0 0 10px rgba(0, 163, 232, 0.5); /* Sombra para destaque */
+}
+
+/* Animação de troca de grupos centralizados */
+@keyframes moveCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(0); /* volta ao início */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Animação do carrossel */
+@keyframes moveCarousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+        /* 5 segundos - os 3 primeiros itens ficam visíveis */
+    }
+
+    30% {
+        transform: translateX(-100%);
+        /* Todos os 3 itens saem rapidamente */
+    }
+
+    50% {
+        transform: translateX(-100%);
+        /* O próximo bloco de 3 itens aparece rapidamente */
+    }
+
+    75% {
+        transform: translateX(-100%);
+        /* O próximo bloco de 3 itens fica visível por 5 segundos */
+    }
+
+    80% {
+        transform: translateX(-200%);
+        /* O próximo bloco de 3 itens sai rapidamente */
+    }
+
+    100% {
+        transform: translateX(-200%);
+        /* O próximo bloco de 3 itens fica visível */
+    }
+}
+
 
 @keyframes slide {
     0% {
@@ -423,7 +718,8 @@ header p {
 
 
 @keyframes slide-mobile {
-    0% {        transform: translateX(0);
+    0% {
+        transform: translateX(0);
     }
 
     40% {
