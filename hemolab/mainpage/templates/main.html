@@ -264,24 +264,88 @@
         </section>
 
 
-        <section>
-            <h2>Serviços</h2>
-            <p>O Hemolab dispõe de serviços de diagnose nas mais diversas áreas como:</p>
-            <ul>
-                <li>Biologia Molecular</li>
-                <li>Hematologia</li>
-                <li>Imuno-hematologia</li>
-                <li>Citometria de Fluxo</li>
-                <li>Bioquímica</li>
-                <li>Imunologia</li>
-                <li>Hormônios</li>
-                <li>Urinálises</li>
-                <li>Parasitologia</li>
-                <li>Microbiologia</li>
-                <li>Micologia</li>
-                <li>Análises Clínicas com recursos e equipamentos de ponta</li>
-            </ul>
+        <section class="container-certificados">
+            <h4>Certificados</h4>
+            <p>O laboratório pioneiro do Rio Grande do Norte certificado pelo Sistema Nacional de Acreditação da
+                Sociedade Brasileira de Análises Clínicas.</p>
+            <div class="Certificados">
+                <div class="member__info">
+                    <img src="{% static 'img/PNCQ.png' %}" alt="#">
+                    <h5 class="member__name"><a href="certificados.html">Excelência Laboratorial</a></h5>
+                    <p class="member__job">Categoria Diamante</p>
+                    <p class="member__desc">Certificado concedido pelo Programa Nacional de Controle de Qualidade (PNCQ)
+                        aos laboratórios que tiveram 20 anos de excelente desempenho.
+                    </p>
+                </div>
+                <div class="member__info">
+                    <img src="{% static 'img/DICQ.png' %}" alt="#">
+                    <h5 class="member__name"><a href="certificados.html">DICQ</a></h5>
+                    <p class="member__job">Sistema Nacional de Acreditação</p>
+                    <p class="member__desc">Pioneiros no RN com certificado pelo Sistema Nacional de Acreditação da
+                        Sociedade Brasileira de Análises Clínicas.
+                    </p>
+                </div>
+            </div>
+            <div class="container-saiba-mais">
+                <a class="btn-princpios" href="#">Saiba mais</a>
+            </div>
         </section>
+
+        <!-- Radios que controlam o carrossel -->
+        <input type="radio" name="feedback" id="f1" checked>
+        <input type="radio" name="feedback" id="f2">
+        <input type="radio" name="feedback" id="f3">
+
+        <section class="feedback-section">
+
+
+            <!-- Seção de Feedback -->
+             <div class="container-feedback">
+                 <!-- Avatares -->
+            <div class="avatars">
+                <label class="avatar" for="f1">
+                    <img src="{% static 'img/1.png' %}" alt="Riedja">
+                    <span>Riedja Porto</span>
+                </label>
+                <label class="avatar" for="f2">
+                    <img src="{% static 'img/2.jpg' %}" alt="Juliana">
+                    <span>Juliana Schivan</span>
+                </label>
+                <label class="avatar" for="f3">
+                    <img src="{% static 'img/3.jpg' %}" alt="Lidiane">
+                    <span>Lidiane Freitas</span>
+                </label>
+            </div>
+
+            <div class="feedback-content">
+                <div class="feedback-display">
+                    <h2 class="feedback-title">Feedbacks</h2>
+                    <p class="feedback-text f-text f1">“Apesar de sempre muito movimentado, o atendimento é rápido.
+                        A equipe muito atenciosa e cordial.”</p>
+                    <p class="feedback-text f-text f2">“Super recomendo. Muito organizado, atendimento super rápido, pega o
+                  resultado pela internet e saí muito rápido e com o histórico dos resultados de exames anteriores.”</p>
+                    <p class="feedback-text f-text f3">“Quero dizer que fui muito bem atendida, desde a recepção até a coleta,
+                  muito simpática e cuidadosa, mãos de fada, não senti dor e foi super agradável.....Fiquei muito feliz
+                  e voltei para casa satisfeita. Obrigada....Gratidão!!!!!”</p>
+                </div>
+            </div>
+
+             </div>
+
+
+           
+
+            <!-- Indicadores -->
+            <div class="indicators">
+                <span class="dot" data-id="1"></span>
+                <span class="dot" data-id="2"></span>
+                <span class="dot" data-id="3"></span>
+            </div>
+
+
+        </section>
+        <section>Convênios</section>
+        <section>disposição Hemolab</section>
     </main>
 
     <footer>
