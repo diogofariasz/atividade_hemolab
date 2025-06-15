@@ -484,7 +484,19 @@ header p {
     box-sizing: border-box;
     background-color: #ffff;
     border-radius: 12px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, margin-top 0.3s ease-in-out;
 }
+
+.carrossel-unidades li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 290px;
+    height: 480px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
 
 .carrossel-unidades li>h4 {
     font-family: Quicksand, sans-serif;
@@ -673,7 +685,6 @@ header p {
 
 /*secção de feedbacks*/
 .container-feedback{
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -753,8 +764,11 @@ input[type="radio"] {
 .avatar span {
     display: block;
     margin-top: 5px;
-    font-weight: 500;
-    color: #777;
+    font-weight: 700;
+    font-family: Quicksand, sans-serif;
+    color: #0e204d;
+    font-size: 16px;
+
 }
 
 /* Avatar ativo */
@@ -805,6 +819,198 @@ input[type="radio"] {
     background: #00b5ad;
     opacity: 1;
     transform: scale(1.2);
+}
+.section-convenios {
+  padding: 40px 20px;
+  text-align: center;
+  width: 98%;
+}
+
+.section-convenios h2 {
+    font-size: 37px;
+    color: #0e204d;
+    font-family: "Quicksand", sans-serif;
+    margin: 0px 0px 20px;
+}
+
+.section-convenios p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #848e9f;
+    width: 450px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+/* Carrossel */
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;  
+}
+
+.carousel-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 30px;
+  padding: 10px 60px;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
+
+.img-convenio {
+  flex: 0 0 calc(25% - 30px); /* 4 imagens por vez com gap */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-convenio img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(0);
+  transition: transform 0.3s;
+}
+
+.img-convenio img:hover {
+  transform: scale(1.05);
+}
+
+/* Botões de navegação */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 2px solid #002366;
+  color: #002366;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: #002366;
+  color: white;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+/*Sobre a empresa*/
+.sobre-empresa {
+  background-color: #00939c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sobre-empresa .logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.sobre-empresa p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #ffff;
+  text-align: center;
+}
+
+.icones-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icones-sociais a {
+  color: white;
+  font-size: 24px;
+  background: white;
+  color: #00939c;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.icones-sociais a:hover {
+  background: #006b73;
+  color: white;
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+}
+footer > p{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #848e9f;
+}
+footer > p > a{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #00989E;
+}
+footer > a{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #00989E;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .img-convenio {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .img-convenio {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .carousel-button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-convenio {
+    flex: 0 0 100%;
+  }
 }
 
 /* Animação de troca de grupos centralizados */
