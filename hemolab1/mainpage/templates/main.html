@@ -19,10 +19,10 @@
         <img src="{% static 'img/logo.png' %}" alt="Logo do site">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="{% url 'main' %}">Home</a></li>
+                <li><a href="{% url 'pag1' %}">Serviços</a></li>
                 <li><a href="#">Certificados</a></li>
-                <li><a href="#">Unidades</a></li>
+                <li><a href="{% url 'pag2' %}">Unidades</a></li>
                 <li><a href="#">Quem Somos</a></li>
             </ul>
         </nav>
