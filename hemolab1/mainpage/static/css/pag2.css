@@ -1,0 +1,54 @@
+ .box1{
+    background-image: url("/static/img/fundo-box1.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px;
+    height: 400px;
+    margin: auto;
+}
+
+.box1 p{
+    font-weight: bolder;
+    font-size: large;
+    font-family: "Quicksand", sans-serif;
+    color: #0e204d;;
+}
+
+.box1 h1{
+    font-family: "Quicksand", sans-serif;
+    color: #0e204d;
+}
+
+.sub-box1{
+    width: 800px;
+    justify-content: center;
+    margin: auto;
+}
+
+.box2-titulo{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #0e204d;
+}
+
+
+
+.sub-boxs{
+    display: flex;
+    gap: 30px;
+    font-family: "Quicksand", sans-serif;
+    color: #0e204d;
+    
+}
+
+
+
+.sub-box{
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+
+}

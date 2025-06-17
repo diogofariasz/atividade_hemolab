@@ -1,19 +1,56 @@
-{% extends "main.html" %}
+{% extends "global.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/pag2.css'%}">
-    <script src='main.js'></script>
-</head>
-<body>
-    <a href="{% url 'main' %}">main</a>
-    <a href="{% url 'pag1' %}">creu1</a>
+{% block title %}Hemolab Serviços{% endblock %}
 
-</body>
-</html>
+{% block main %}
+
+<link rel='stylesheet' href="{% static 'css/pag2.css' %}">
+
+<div class="box1">
+    <div class="sub-box1">
+        <img src="{% static 'img/unidades.png' %}" alt="">
+        <h1>Unidades</h1>
+        <p>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento, espalhadas por toda Natal e Grande Natal.</p>
+    </div>
+</div>
+
+<div class="fundo-box2">
+    <div class="box2-titulo">
+        <p>Sempre próximos de você</p>
+        <h1>Encontre a unidade Hemolab mais próxima</h1>
+    </div>
+
+    <div class="sub-boxs">
+        <div class="sub-box">
+            <img width="350px" src="{% static 'img/petropolis.png' %}" alt="">
+            <h3>Hemolab - Petrópolis</h3>
+            <ul>
+                <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                <li>(84) 3616-5000</li>
+                <li>Segunda à Sexta das 6:00h às 17:00h Sábado das 6:30h às 13:00h</li>
+            </ul>
+        </div>
+        <div class="sub-box">
+            <img width="350px" src="{% static 'img/nascimento de castro.png' %}" alt="">
+            <h3>Hemolab - Nascimento de Castro</h3>
+            <ul>
+                <li>Av. Nascimento de Castro, 1909 - Lagoa Nova</li>
+                <li>(84) 3616-5000</li>
+                <li>Segunda à Sexta das 6:00h às 16:00h Sábado das 6:30h às 12:00h</li>
+            </ul>
+        </div>
+        <div class="sub-box">
+            <img width="350px" src="{% static 'img/miguel castro.png' %}" alt="">
+            <h3>Hemolab - Miguel Castro</h3>
+            <ul>
+                <li>Av. Miguel Castro, 1137, Lagoa Nova</li>
+                <li>(84) 3616-5000</li>
+                <li>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

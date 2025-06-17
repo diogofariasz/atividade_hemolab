@@ -1,93 +1,43 @@
+{% extends "global.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hemolab Serviços</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/pag1.css'%}">
-</head>
-<body>
+{% block titulo %}Hemolab Serviços{% endblock %}
 
-        <header>
-        <a href="{% url 'main' %}"><img src="{% static 'img/logo.png' %}" alt="Logo do site"></a>
-        <nav>
-            <ul>
-                <li><a href="{% url 'main' %}">Home</a></li>
-                <li><a href="{% url 'pag1' %}">Serviços</a></li>
-                <li><a href="#">Certificados</a></li>
-                <li><a href="{% url 'pag2' %}">Unidades</a></li>
-                <li><a href="#">Quem Somos</a></li>
-            </ul>
-        </nav>
+{% block main %}
 
-        <div class="contato-conteiner">
-            <p> (84) 3616-5000</p>
-            <p> (84) 3616-5000</p>
-        </div>
+<link rel='stylesheet' href="{% static 'css/pag1.css' %}">
 
-        <p class="Resultados">Resultados</p>
-        <p class="Compre-online">Compre Online</p>
-    </header>
-    <div class="box1" >
-        <div class="sub-box1">
-            <img src="{% static 'img/icone0.png' %}" alt="">
-            <h1>Serviços</h1>
-            <p>O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular, hematologia, imuno-hematologia, citometria de fluxo, bioquímica, imunologia, hormônios, urinálises, parasitologia, microbiologia, micologia, análises clinicas com recursos e equipamentos de ponta. </p>
-        </div>
+<div class="box1">
+    <div class="sub-box1">
+        <img src="{% static 'img/icone0.png' %}" alt="">
+        <h1>Serviços</h1>
+        <p>O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular, hematologia, imuno-hematologia, citometria de fluxo, bioquímica, imunologia, hormônios, urinálises, parasitologia, microbiologia, micologia, análises clinicas com recursos e equipamentos de ponta. </p>
+    </div>
+</div>
+
+<div class="fundo-box2">
+    <div class="box2-titulo">
+        <p>Confiabilidade e experiência</p>
+        <h1>Confira os principais exames que ofertamos</h1>
     </div>
 
-    <div class="fundo-box2">
-        <div class="box2-titulo">
-            <p>Confiabilidade e experiência</p>
-            <h1>Confira os principais exames que ofertamos</h1>
+    <div class="sub-boxs">
+        <div class="sub-box">
+            <img src="{% static 'img/icone1.png' %}" alt="">
+            <h3>Vacinas</h3>
+            <p>O hemolab Vacinas é localizado na nossa Unidade Capim Macio, dispõe de vacinas para todas as fases da vida, do infantil a melhor idade.</p>
         </div>
-            <div class="sub-boxs">
-                <div class="sub-box">
-                    <img src="{% static 'img/icone1.png' %}" alt="">
-                    <h3>Vacinas</h3>
-                    <p>O hemolab Vacinas é localizado na nossa Unidade Capim Macio, dispõe de vacinas para todas as fases da vida, do infantil a melhor idade. </p>
-                </div>
-                <div class="sub-box">
-                    <img src="{% static 'img/icone2.png' %}" alt="">
-                    <h3>Coletas externas</h3>
-                    <p>Praticidade, conforto e segurança são os principais benefícios do serviço de coleta externa do Hemolab, basta agendar com pelo menos 24h de antecedência.</p>
-                </div>
-                <div class="sub-box">
-                    <img src="{% static 'img/icone3.png' %}" alt="">
-                    <h3>Drive-thru</h3>
-                    <p>Nosso drive-thru é ideal para sua coleta de exames com mais segurança e comodidade fica localizado na Av. Nascimento de Castro, 1909.</p>
-                </div>
-            </div>
+        <div class="sub-box">
+            <img src="{% static 'img/icone2.png' %}" alt="">
+            <h3>Coletas externas</h3>
+            <p>PPraticidade, conforto e segurança são os principais benefícios do serviço de coleta externa do Hemolab, basta agendar com pelo menos 24h de antecedência.</p>
+        </div>
+        <div class="sub-box">
+            <img src="{% static 'img/icone3.png' %}" alt="">
+            <h3>Drive-thru</h3>
+            <p>Nosso drive-thru é ideal para sua coleta de exames com mais segurança e comodidade fica localizado na Av. Nascimento de Castro, 1909. </p>
+        </div>
     </div>
-        <section class="sobre-empresa">
-        <div class="conteudo-empresa">
-            <img src="{% static 'img/logo-footer.png' %}" alt="Hemolab Logo" class="logo">
-                <p>
-                O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular,
-                hematologia, imuno-hematologia, citometria de fluxo, bioquímica, imunologia, hormônios,
-                urinálises, parasitologia, microbiologia, micologia, análises clínicas com recursos e
-                equipamentos de ponta.
-                </p>
+</div>
 
-            <div class="icones-sociais">
-                <a href="tel:558436165000" aria-label="Telefone">
-                    <i class="fas fa-phone"></i>
-                </a>
-                <a href="https://www.instagram.com/hemolab_rn/" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/hemolabrn" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                </div>
-            </div>
-    </section>
-    <footer>
-        <p>© 2023 Hemolab, Todos os direitos reservados. Desenvolvido por <a href="https://www.lartsdesign.com.br"  target="_blank" >lartsdesign.com.br</a></p>
-        <a href="politicas_privacidade.html">Políticas de Privacidade</a>
-    </footer>
-</body>
-</html>
+{% endblock %}

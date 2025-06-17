@@ -5,7 +5,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hemolab - Unidades</title>
+    <title> {% block titulo %} Hemolab - Unidades {% endblock %} </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/main.css'%}">
     <script src='main.js'></script>
@@ -37,7 +37,9 @@
     </header>
     
     <main>
+        {% block main %}
         <section>
+        
             <div class="carrossel">
                 <div class="slider">
                     <div class="slide">
@@ -68,6 +70,7 @@
                     </div>
                 </div>
             </div>
+        
         </section>
 
         <section class="principios">
@@ -384,6 +387,7 @@
                 <button class="carousel-button next" onclick="document.querySelector('.carousel-wrapper').scrollBy({left: 300, behavior: 'smooth'})">›</button>
             </div>
         </section>
+    
         <section class="sobre-empresa">
             <div class="conteudo-empresa">
                 <img src="{% static 'img/logo-footer.png' %}" alt="Hemolab Logo" class="logo">
@@ -407,6 +411,7 @@
                 </div>
             </div>
         </section>
+        {% endblock %}
     </main>
     <footer>
         <p>© 2023 Hemolab, Todos os direitos reservados. Desenvolvido por <a href="https://www.lartsdesign.com.br"  target="_blank" >lartsdesign.com.br</a></p>

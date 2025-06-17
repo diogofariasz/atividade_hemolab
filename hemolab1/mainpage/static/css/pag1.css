@@ -130,8 +130,7 @@ header p {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
-
-.box1{
+ .box1{
     background-image: url("/static/img/fundo-box1.png");
     text-align: center;
     padding: 100px;
